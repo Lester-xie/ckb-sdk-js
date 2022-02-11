@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "lib",
+    "lib": [
+      "es6",
+      "es2020.bigint"
+    ],
+    "typeRoots": ["@nervosnetwork/ckb-sdk-utils"],
+    "types": ["node", "@nervosnetwork/ckb-types"]
+  },
+  "include": ["src"]
+}
